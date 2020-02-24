@@ -1,5 +1,5 @@
 {
-  "name": "swlib/http",
+  "name": "dlents/http",
   "type": "library",
   "keywords": [
     "php",
@@ -7,19 +7,23 @@
     "http",
     "psr7"
   ],
-  "description": "Swlib-HTTP base class repository, PSR implementation",
+  "description": "dlents-HTTP base class repository, PSR implementation",
   "license": "MIT",
   "authors": [
     {
       "name": "twosee",
       "email": "twose@qq.com"
+    },
+    {
+      "name": "David Lents",
+      "email": "david@lents.net"
     }
   ],
   "support": {
-    "issues": "https://github.com/swlib/http/issues"
+    "issues": "https://github.com/dlents/http/issues"
   },
   "require": {
-    "php": ">=7.0",
+    "php": ">=7.1",
     "psr/http-message": "~1.0"
   },
   "autoload": {
@@ -30,13 +34,9 @@
       "Swlib\\Http\\": "src"
     }
   },
-  "repositories": {
-    "packagist": {
-      "type": "composer",
-      "url": "https://packagist.laravel-china.org/"
-    }
-  },
+
   "require-dev": {
+    "roave/security-advisories": "dev-master",
     "eaglewu/swoole-ide-helper": "dev-master",
     "phpunit/phpunit": "~7"
   },
